@@ -11,8 +11,6 @@ library(echarts4r)
 library(Cairo)
 options(shiny.usecairo=T)
 
-# setwd("/Users/Kate/OneDrive/Vaccine report/Vaccine-projections")
-
 # Load data and income group classification
 data_owid <- fread("https://covid.ourworldindata.org/data/owid-covid-data.csv") %>%
   select(iso_code, location, date, people_fully_vaccinated_per_hundred, continent) %>% as.data.frame()
